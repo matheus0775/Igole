@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Igole.MainPage" BackgroundImageSource="Bud.jpg">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Button" TargetType="Button">
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="BackgroundColor" Value="YellowGreen"/>
+            </Style>
+            <Style x:Key="Pesquisa" TargetType="SearchBar">
+                <Setter Property="Opacity" Value="2" />
+                    <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="BackgroundColor" Value="#YellowGreen"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor" Value="White"/>
+
+            </Style>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="GreenYellow"/>
+                <Setter Property="BarTextColor" Value="White"/>
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        
+
+        <Grid>
+            <SearchBar Placeholder="Pesquisa rapida..." TextColor="#000000" PlaceholderColor="LightGray"  HorizontalOptions="Start" VerticalOptions="StartAndExpand"  Style="{StaticResource Pesquisa}" />
+            
+            <Grid VerticalOptions="Center" HorizontalOptions="Center" RowSpacing="10" ColumnSpacing="10" >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="150" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150" />
+                    <ColumnDefinition Width="150" />
+                </Grid.ColumnDefinitions>
+                <Button Text="PROMOÇÕES" ImageSource="Calendario.png" Grid.Row="0" Grid.Column="0" Style="{StaticResource Button}"/>
+                <Button Text="CARDAPIO" ImageSource="Cardapio.png" Grid.Row="0" Grid.Column="1" Style="{StaticResource Button}"
+                        Clicked="Button_Clicked" />
+                    <Button Text="MEUS PEDIDOS" ImageSource="Carrinho.png" Grid.Row="1" Grid.Column="0" Style="{StaticResource Button}"/>
+                <Button Text="MEU PERFIL" ImageSource="Perfil.png" Grid.Row="1" Grid.Column="1"  Style="{StaticResource Button}"/>
+
+            </Grid>
+        </Grid>
+
+
+    </ContentPage.Content>
+</ContentPage>

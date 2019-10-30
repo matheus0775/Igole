@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Igole.Cardapio" Title="Cardapio" BackgroundImageSource="Copo.jpg" >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="Button" TargetType="ImageButton">
+                <Setter Property="Margin" Value="55,0,15,15" />
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+
+
+                <!--<Setter Property="Margin" Value="D,B,,0" />-->
+            </Style>
+
+
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+   <StackLayout>
+       
+    <ListView x:Name="LvCardapio">
+        <ListView.ItemTemplate>
+            
+            <DataTemplate>
+                
+
+                    <ViewCell  StyleId="Blue">
+                    <StackLayout Orientation="Horizontal">
+
+                        <Image Source="{Binding ImagemUrl}" HorizontalOptions="Start"/>
+                        <StackLayout>
+                            <StackLayout HorizontalOptions="Start">
+                                <Label Text="{Binding Nome}" TextColor="BlanchedAlmond"/>
+                                <Label Text="{Binding Descricao}" TextColor="Gray" VerticalOptions="End"/>
+
+                            </StackLayout>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="Center" Spacing="-15">
+                            
+                            <ImageButton Source="Setamaiormini.png" Style="{StaticResource Button}" />
+                            
+                            <ImageButton Source="Setamenormini.png" Style="{StaticResource Button}" />
+
+
+
+                            <!--<Button ImageSource="Maismini.png" Style="{StaticResource Button}" ></Button>
+                                <Button ImageSource="Menosmini.png" Style="{StaticResource Button}" ></Button>-->
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="Center" Spacing="-5">
+                                <Label Text="{Binding Real}" TextColor="Red" FontAttributes="Bold"/>
+                                <Label Text="{Binding Valor}  " TextColor="Red" FontAttributes="Bold" />
+                        </StackLayout>
+                    </StackLayout>
+                    
+                </ViewCell>
+
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+   </StackLayout>
+    
+    
+
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/Igole"
+    android:orientation="vertical"
+    android:background="#7f6faf"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:text="@string/sendData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enviarDados" />
+    <Button
+        android:text="@string/readJson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lerJson" />
+    <Button
+        android:text="@string/readXml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lerXml" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_weight="1" />
+</LinearLayout>-->
+</ContentPage>
