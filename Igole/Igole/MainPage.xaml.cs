@@ -25,5 +25,23 @@ namespace Igole
             await Navigation.PushAsync(new Cardapio());
 
         }
+
+        private async void Promo_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Promocao());
+
+        }
+
+        private async void Perfil_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Perfil());
+
+        }
+
+        private async void Pedido_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MeuCarrinho());
+
+        }
     }
 }

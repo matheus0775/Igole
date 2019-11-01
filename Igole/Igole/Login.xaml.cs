@@ -1,4 +1,5 @@
 ﻿using DocumentFormat.OpenXml.Drawing.Charts;
+using Igole.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,13 +15,37 @@ namespace Igole
     public partial class Login : ContentPage
 
     {
-        Uri uri;
+        //Uri uri;
         public Login()
         {
+            //var vm = new ModLogin();
+
+            //this.BindingContext = vm;
+
+            //vm.ExibirAvisoDeLoginInvalido += () => DisplayAlert("Erro", "Login Inválido, tente novamente", "OK");
+
             InitializeComponent();
 
 
+
+            //Email.Completed += (object sender, EventArgs e) =>
+            //{
+            //    Senha.Focus();
+            //};
+            //Senha.Completed += (object sender, EventArgs e) =>
+            //{
+            //    vm.SubmitCommand.Execute(null);
+            //};
+
+
+
+
+            //barra de naveção//
             NavigationPage.SetHasNavigationBar(this, false);
+
+
+
+
 
             // Define o binding context
             this.BindingContext = this;
@@ -32,19 +57,38 @@ namespace Igole
 
         private async void BtnLogin_Clicked(object sender, EventArgs e)
         {
-            //ativa o ActivityIndicator
+
             this.IsBusy = true;
-            // aqui ficaria o seu código 
-            // para fazer a autenticação
+
             await DandoUmTempo(5000);
-            Application.Current.MainPage = new NavigationPage(new MainPage());
+
+            if (Email.Text == "Teste" && Senha.Text == "123")
+            {
+
+                Application.Current.MainPage = new NavigationPage(new MainPage());
+            }
+            if (Email.Text == "adm" && Senha.Text == "adm")
+            {
+                Application.Current.MainPage = new NavigationPage(new ViewAdm.Administrador());
+            }
+            else
+            {
+                await DisplayAlert("Erro", "Login Inválido, tente novamente", "OK");
+            }
+
+
+
         }
         async Task DandoUmTempo(int valor)
         {
             await Task.Delay(valor);
         }
+
     }
-}
+
+ }
+
+
 
      
     
