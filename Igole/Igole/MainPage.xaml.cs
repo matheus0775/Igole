@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Igole.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -17,12 +18,20 @@ namespace Igole
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+
         }
+
+        
+
 
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
+
+
             await Navigation.PushAsync(new Cardapio());
+
+
 
         }
 
@@ -43,5 +52,7 @@ namespace Igole
             await Navigation.PushAsync(new MeuCarrinho());
 
         }
+
     }
 }
+

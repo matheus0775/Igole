@@ -28,12 +28,11 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        
 
-        <Grid>
+            <Grid>
             <SearchBar Placeholder="Pesquisa rapida..." TextColor="#000000" PlaceholderColor="LightGray"  HorizontalOptions="Start" VerticalOptions="StartAndExpand"  Style="{StaticResource Pesquisa}" />
-            
-            <Grid VerticalOptions="Center" HorizontalOptions="Center" RowSpacing="10" ColumnSpacing="10" >
+
+                    <Grid VerticalOptions="Center" HorizontalOptions="Center" RowSpacing="10" ColumnSpacing="10" >
 
                 <Grid.RowDefinitions>
                     <RowDefinition Height="150" />
@@ -44,13 +43,18 @@
                     <ColumnDefinition Width="150" />
                 </Grid.ColumnDefinitions>
                 <Button Text="PROMOÇÕES" ImageSource="Calendario.png" Clicked="Promo_Clicked" Grid.Row="0" Grid.Column="0" Style="{StaticResource Button}"/>
-                <Button Text="CARDAPIO" ImageSource="Cardapio.png" Grid.Row="0" Grid.Column="1" Style="{StaticResource Button}" Clicked="Button_Clicked" />
-                    <Button Text="MEUS PEDIDOS" ImageSource="Carrinho.png" Clicked="Pedido_Clicked"  Grid.Row="1" Grid.Column="0" Style="{StaticResource Button}"/>
+                <Button Text="CARDAPIO" x:Name="ListContas" ImageSource="Cardapio.png" Grid.Row="0" Grid.Column="1" Style="{StaticResource Button}" Clicked="Button_Clicked" />
+                <Button Text="MEUS PEDIDOS" ImageSource="Carrinho.png" Clicked="Pedido_Clicked"  Grid.Row="1" Grid.Column="0" Style="{StaticResource Button}"/>
                 <Button Text="MEU PERFIL" ImageSource="Perfil.png" Clicked="Perfil_Clicked" Grid.Row="1" Grid.Column="1"  Style="{StaticResource Button}"/>
 
+
             </Grid>
+       
         </Grid>
 
 
-    </ContentPage.Content>
+           
+    </ContentPage.Content> 
 </ContentPage>
+    
+    

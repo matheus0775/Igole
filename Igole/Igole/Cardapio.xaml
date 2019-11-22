@@ -4,20 +4,20 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Igole.Cardapio" Title="Cardapio" BackgroundImageSource="Copo.jpg" >
+             x:Class="Igole.Cardapio" Title="Cardapio" BackgroundColor="#fffff" >
     <ContentPage.Resources>
-        <ResourceDictionary>
+        <!--<ResourceDictionary>
             <Style x:Key="Button" TargetType="ImageButton">
                 <Setter Property="Margin" Value="55,0,15,15" />
                 <Setter Property="BackgroundColor" Value="Transparent"/>
 
 
-                <!--<Setter Property="Margin" Value="D,B,,0" />-->
+                --><!--<Setter Property="Margin" Value="D,B,,0" />--><!--
             </Style>
 
 
 
-        </ResourceDictionary>
+        </ResourceDictionary>-->
     </ContentPage.Resources>
    <StackLayout>
        
@@ -29,29 +29,33 @@
 
                     <ViewCell  StyleId="Blue">
                     <StackLayout Orientation="Horizontal">
-
-                        <Image Source="{Binding ImagemUrl}" HorizontalOptions="Start"/>
+                        
+                            <Image Source="{Binding image}" HorizontalOptions="Start"/>
                         <StackLayout>
                             <StackLayout HorizontalOptions="Start">
-                                <Label Text="{Binding Nome}" TextColor="BlanchedAlmond"/>
-                                <Label Text="{Binding Descricao}" TextColor="Gray" VerticalOptions="End"/>
+                                    <Label Text="{Binding nameProduct}" TextColor="BlanchedAlmond"/>
+                                    <Label Text="{Binding description}" TextColor="Gray" VerticalOptions="End"/>
 
                             </StackLayout>
                         </StackLayout>
                         <StackLayout HorizontalOptions="Center" Spacing="-15">
-                            
-                            <ImageButton Source="Setamaiormini.png" Style="{StaticResource Button}" />
-                            
-                            <ImageButton Source="Setamenormini.png" Style="{StaticResource Button}" />
+
+                                <!--<Label Text="{Binding volumeType}"/>
+                                <Label Text="{Binding amountVolume}"/>
+                                <Label Text="{Binding category}"/>
+                                <Label Text="{Binding subCategory}"/>
+                                <Label Text="{Binding tag}"/>
+                                <Label Text="{Binding stock}"/>-->
+                                
 
 
 
-                            <!--<Button ImageSource="Maismini.png" Style="{StaticResource Button}" ></Button>
-                                <Button ImageSource="Menosmini.png" Style="{StaticResource Button}" ></Button>-->
+                                <!--<ImageButton Source="Setamaiormini.png" Style="{StaticResource Button}" />
+                            <ImageButton Source="Setamenormini.png" Style="{StaticResource Button}" />-->
                         </StackLayout>
                         <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="Center" Spacing="-5">
                                 <Label Text="{Binding Real}" TextColor="Red" FontAttributes="Bold"/>
-                                <Label Text="{Binding Valor}  " TextColor="Red" FontAttributes="Bold" />
+                                <Label Text="{Binding price}  " TextColor="Red" FontAttributes="Bold" />
                         </StackLayout>
                     </StackLayout>
                     

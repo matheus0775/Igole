@@ -2,6 +2,7 @@ C:\Users\Suporte\source\repos\Igole\Igole\Igole\bin\Debug\netstandard2.0\Igole.d
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\bin\Debug\netstandard2.0\Igole.dll
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\bin\Debug\netstandard2.0\ref\Igole.dll
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\bin\Debug\netstandard2.0\Igole.pdb
+C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\Igole.csprojAssemblyReference.cache
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\Cardapio.xaml.g.cs
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\Login.xaml.g.cs
@@ -9,11 +10,10 @@ C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\MainPag
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\MeuCarrinho.xaml.g.cs
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\Perfil.xaml.g.cs
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\Promocao.xaml.g.cs
+C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\ViewAdm\Administrador.xaml.g.cs
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\Igole.AssemblyInfoInputs.cache
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\Igole.AssemblyInfo.cs
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\Igole.dll
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\ref\Igole.dll
 C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\Igole.pdb
-C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\Igole.csprojAssemblyReference.cache
-C:\Users\Suporte\source\repos\Igole\Igole\Igole\obj\Debug\netstandard2.0\ViewAdm\Administrador.xaml.g.cs

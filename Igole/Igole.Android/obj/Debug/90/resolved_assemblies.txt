@@ -5,6 +5,13 @@ C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\ass
 C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\Java.Interop.dll
 C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\Mono.Android.dll
 C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\mscorlib.dll
+C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\Newtonsoft.Json.dll
+C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\SQLite-net.dll
+C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\SQLitePCLRaw.batteries_green.dll
+C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\SQLitePCLRaw.core.dll
+C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\SQLitePCLRaw.lib.e_sqlite3.dll
+C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\System.Core.dll
 C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\System.dll
 C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\System.IO.Packaging.dll
@@ -88,4 +95,6 @@ C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\ass
 C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\System.ComponentModel.Composition.dll
 C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\System.Net.Http.dll
 C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\System.Web.Services.dll
+C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\System.Linq.Expressions.dll
+C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\System.Threading.Tasks.dll
 C:\Users\Suporte\source\repos\Igole\Igole\Igole.Android\obj\Debug\90\android\assets\Mono.Security.dll
