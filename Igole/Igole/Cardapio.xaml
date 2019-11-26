@@ -29,18 +29,27 @@
 
                     <ViewCell  StyleId="Blue">
                     <StackLayout Orientation="Horizontal">
-                        
-                            <Image Source="{Binding image}" HorizontalOptions="Start"/>
+                            <Image>
+                                <Image.Source>
+                                    <UriImageSource Uri="{Binding Image}" CacheValidity="14" 
+			                                CachingEnabled="true"/>
+                                </Image.Source>
+                            </Image>
+                            <!--<Image Source="{Binding image}" AbsoluteLayout.LayoutFlags="All" HorizontalOptions="Start"/>-->
                         <StackLayout>
                             <StackLayout HorizontalOptions="Start">
                                     <Label Text="{Binding nameProduct}" TextColor="BlanchedAlmond"/>
                                     <Label Text="{Binding description}" TextColor="Gray" VerticalOptions="End"/>
 
                             </StackLayout>
-                        </StackLayout>
-                        <StackLayout HorizontalOptions="Center" Spacing="-15">
 
-                                <!--<Label Text="{Binding volumeType}"/>
+                                <StackLayout>
+                                    <Label Text="Testando" TextColor="Black"/>
+                                </StackLayout>
+                        </StackLayout>
+                        <!--<StackLayout HorizontalOptions="Center" Spacing="-15">
+
+                                --><!--<Label Text="{Binding volumeType}"/>
                                 <Label Text="{Binding amountVolume}"/>
                                 <Label Text="{Binding category}"/>
                                 <Label Text="{Binding subCategory}"/>
@@ -51,11 +60,11 @@
 
 
                                 <!--<ImageButton Source="Setamaiormini.png" Style="{StaticResource Button}" />
-                            <ImageButton Source="Setamenormini.png" Style="{StaticResource Button}" />-->
-                        </StackLayout>
+                            <ImageButton Source="Setamenormini.png" Style="{StaticResource Button}" />--><!--
+                        </StackLayout>-->
                         <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="Center" Spacing="-5">
-                                <Label Text="{Binding Real}" TextColor="Red" FontAttributes="Bold"/>
-                                <Label Text="{Binding price}  " TextColor="Red" FontAttributes="Bold" />
+                                <Label Text="R$" TextColor="Red" FontAttributes="Bold" />
+                                <Label Text="{Binding price}" TextColor="Red" FontAttributes="Bold" />
                         </StackLayout>
                     </StackLayout>
                     

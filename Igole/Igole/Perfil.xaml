@@ -5,48 +5,44 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Igole.Perfil"
-             Title="Perfil" BackgroundColor="#A2A0A0">
+             Title="Perfil" BackgroundImageSource="Bud.png">
     <ContentPage.Content>
-        <StackLayout >
-
+        <StackLayout Spacing="8">
+            <RelativeLayout VerticalOptions="Start" HeightRequest="150" BackgroundColor="Black" >
+                
+            </RelativeLayout>
             <StackLayout>
-                <Grid >
 
-                    <ScrollView>
-                        <FlexLayout x:Name="flexLayout"
-                        Wrap="Wrap"
-                        JustifyContent="SpaceAround" />
-                    </ScrollView>
+                <StackLayout>
+                </StackLayout>
+                
+                <StackLayout >
+                    <Button Text="HISTÓRICO" BackgroundColor="GreenYellow" />
 
-                    <ActivityIndicator x:Name="activityIndicator"
-                           IsRunning="True"
-                           VerticalOptions="Center" />
-                    
-                    <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="200"/>
-                        <ColumnDefinition Width="150"/>
+                </StackLayout>
 
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="100" />
-                        <RowDefinition Height="50" />
-                        
-                        </Grid.RowDefinitions>
-                        
-                    <StackLayout Grid.Row="0" Grid.Column="0" >
-                            <Image Source="pizza.jpg" HorizontalOptions="Center"></Image>
-                        </StackLayout>
-                        
-                        <StackLayout Grid.Row="0" Grid.Column="1"  BackgroundColor="Red">
-                            <Button Text="Historico"  />
-                        </StackLayout>
+                <StackLayout >
+                    <Button Text="CARTÕES"  BackgroundColor="GreenYellow" />
+                </StackLayout>
 
-                    </Grid>
-                </Grid>
+                <StackLayout>
+                </StackLayout>
+                <StackLayout>
+                </StackLayout>
+                <StackLayout>
+                </StackLayout>
+                <StackLayout>
+                </StackLayout>
+                <StackLayout>
+                </StackLayout>
+                <StackLayout>
+                </StackLayout>
+                
+                <StackLayout>
+                    <Button Text="TROCAR SUA SENHA" BackgroundColor="GreenYellow" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+                
             </StackLayout>
-
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

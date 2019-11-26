@@ -21,7 +21,9 @@ namespace Igole
             ContasViewModel contasViewModel = new ContasViewModel();
             this.BindingContext = contasViewModel;
 
-         
+
+
+
             contasViewModel.IniciaDados();
 
             LvCardapio.ItemsSource = new List<Model.ModCardapio>(contasViewModel.Cardapio);
@@ -33,6 +35,8 @@ namespace Igole
 
             //((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.Blue;
             //((NavigationPage)Application.Current.MainPage).BarTextColor = Color.Black;
+
+
         }
     }
 }
