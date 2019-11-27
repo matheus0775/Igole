@@ -9,7 +9,7 @@ namespace Igole.Model
     public class ModCardapio
     {
         [PrimaryKey, AutoIncrement]
-        public int? Id { get; set; }
+        public int? _id { get; set; }
         public String nameProduct { get; set; }
         public String description { get; set; }
         public String image { get; set; }

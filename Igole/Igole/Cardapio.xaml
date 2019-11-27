@@ -28,7 +28,7 @@
                 
 
                     <ViewCell  StyleId="Blue">
-                    <StackLayout Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" HeightRequest="100">
                             <Image>
                                 <Image.Source>
                                     <UriImageSource Uri="{Binding Image}" CacheValidity="14" 
@@ -39,8 +39,8 @@
                         <StackLayout>
                             <StackLayout HorizontalOptions="Start">
                                     <Label Text="{Binding nameProduct}" TextColor="BlanchedAlmond"/>
-                                    <Label Text="{Binding description}" TextColor="Gray" VerticalOptions="End"/>
-
+                                  
+                                    <Label Text="{Binding description}" TextColor="Gray" VerticalOptions="End" />
                             </StackLayout>
 
                                 <StackLayout>
@@ -75,36 +75,4 @@
     </ListView>
    </StackLayout>
     
-    
-
-
-<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/Igole"
-    android:orientation="vertical"
-    android:background="#7f6faf"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <Button
-        android:text="@string/sendData"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/enviarDados" />
-    <Button
-        android:text="@string/readJson"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lerJson" />
-    <Button
-        android:text="@string/readXml"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lerXml" />
-    <TextView
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:background="@android:color/white"
-        android:textColor="@android:color/black"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_weight="1" />
-</LinearLayout>-->
 </ContentPage>

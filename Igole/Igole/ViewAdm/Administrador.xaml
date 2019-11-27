@@ -6,10 +6,105 @@
              mc:Ignorable="d"
              x:Class="Igole.ViewAdm.Administrador">
     <ContentPage.Content>
+ 
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                   <StackLayout>
+                          <Button Text="Pagina Inicial" BackgroundColor="GreenYellow" Clicked="Button_Clicked" />
+                    </StackLayout>
+            <StackLayout>
+                <StackLayout>
+                    <Entry Placeholder="Nome" Text= "{Binding ModCardapio.nameProduct} "/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry Placeholder="Valor R$" Text="{Binding ModCardapio.price}" Keyboard="Numeric" />
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry Placeholder="Descrição" Text= "{Binding ModCardapio.description}" MaxLength="24"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry Placeholder="Estoque" Text= "{Binding ModCardapio.stock}" MaxLength="4" Keyboard="Numeric" />
+                </StackLayout>
+
+                <!--<StackLayout>
+                    <Entry Placeholder="Tipo de Volume" Text= "{Binding ModCardapio.volumeType} "/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry Placeholder="Categoria" Text= "{Binding ModCardapio.category} "/>
+                </StackLayout>
+
+                <StackLayout>
+                    <Entry Placeholder="Sub-Categoria" Text= "{Binding ModCardapio.subCategory} "/>
+                </StackLayout>-->
+
+                <StackLayout>
+                    <Button Text="Salvar" Command="{Binding ButtonCommand}"/>
+
+                </StackLayout>
+            </StackLayout>
+            
+            <StackLayout>
+
+                <ListView ItemsSource="{Binding ModCardapio}" x:Name="LvCardapio">
+                    <ListView.ItemTemplate>
+
+                        <DataTemplate>
+
+
+                            <ViewCell  StyleId="Blue">
+                                <StackLayout Orientation="Horizontal" HeightRequest="100">
+                                    <Image>
+                                        <Image.Source>
+                                            <UriImageSource Uri="{Binding Image}" CacheValidity="14" 
+			                                CachingEnabled="true"/>
+                                        </Image.Source>
+                                    </Image>
+                                    <!--<Image Source="{Binding image}" AbsoluteLayout.LayoutFlags="All" HorizontalOptions="Start"/>-->
+                                    <StackLayout>
+                                        <StackLayout HorizontalOptions="Start">
+                                            <Label Text="{Binding nameProduct}" TextColor="BlanchedAlmond"/>
+
+                                            <Label Text="{Binding description}" TextColor="Gray" VerticalOptions="End" />
+                                        </StackLayout>
+
+                                        <StackLayout>
+                                            <Label Text="Testando" TextColor="Black"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    
+                                    <!--<StackLayout HorizontalOptions="Center" Spacing="-15">
+
+                                -->
+                                    <!--<Label Text="{Binding volumeType}"/>
+                                <Label Text="{Binding amountVolume}"/>
+                                <Label Text="{Binding category}"/>
+                                <Label Text="{Binding subCategory}"/>
+                                <Label Text="{Binding tag}"/>
+                                <Label Text="{Binding stock}"/>-->
+
+
+
+
+                                    <!--<ImageButton Source="Setamaiormini.png" Style="{StaticResource Button}" />
+                            <ImageButton Source="Setamenormini.png" Style="{StaticResource Button}" />-->
+                                    <!--
+                        </StackLayout>-->
+                                    
+                                    <StackLayout HorizontalOptions="EndAndExpand" VerticalOptions="Center" Spacing="-5">
+                                        <Label Text="R$" TextColor="Red" FontAttributes="Bold" />
+                                        <Label Text="{Binding price}" TextColor="Red" FontAttributes="Bold" />
+                                    </StackLayout>
+                                </StackLayout>
+
+                            </ViewCell>
+
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

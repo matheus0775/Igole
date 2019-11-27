@@ -59,7 +59,7 @@ namespace Igole.ViewModel
 
         private void ExecuteButton()
         {
-            if (ModCardapio.Id >= 1)
+            if (ModCardapio._id >= 1)
             {
                 _conexao.Update(ModCardapio);
                 App.Current.MainPage.DisplayAlert("Produto", "Alterado com sucesso", "Ok");

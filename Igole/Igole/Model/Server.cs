@@ -45,9 +45,9 @@ namespace Igole.Model
             using (var produto = new HttpClient())
             {
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11;
-                cardapio.Id = null;
+                cardapio._id = null;
                 var dados = JsonConvert.SerializeObject(cardapio);
-                var request = new HttpRequestMessage(HttpMethod.Put, string.Format("{0}/{1}", endpoint, cardapio.Id));
+                var request = new HttpRequestMessage(HttpMethod.Put, string.Format("{0}/{1}", endpoint, cardapio._id));
                 request.Content = new StringContent(dados, Encoding.UTF8, "application/json");
                 var result = produto.SendAsync(request).Result;
             }
@@ -59,10 +59,12 @@ namespace Igole.Model
             {
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11;
                 var dados = JsonConvert.SerializeObject(cardapio);
-                var request = new HttpRequestMessage(HttpMethod.Delete, string.Format("{0}/{1}", endpoint, cardapio.Id));
+                var request = new HttpRequestMessage(HttpMethod.Delete, string.Format("{0}/{1}", endpoint, cardapio._id));
                 request.Content = new StringContent(dados, Encoding.UTF8, "application/json");
                 var result = produto.SendAsync(request).Result;
             }
+
+            
         }
     }
 }
