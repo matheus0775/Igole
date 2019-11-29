@@ -10,7 +10,7 @@ namespace Igole
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Login());
+            MainPage = new NavigationPage(new ViewAdm.Administrador());
         }
 
         protected override void OnStart()

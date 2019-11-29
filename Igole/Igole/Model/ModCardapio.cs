@@ -9,11 +9,12 @@ namespace Igole.Model
     public class ModCardapio
     {
         [PrimaryKey, AutoIncrement]
-        public int? _id { get; set; }
+        public int? Id { get; set; } 
+        public String _id { get; set; }
         public String nameProduct { get; set; }
         public String description { get; set; }
         public String image { get; set; }
-        public String Real { get; set; }
+        public String Real { get; set; } //????
         public String price { get; set; }
         public String stock { get; set; }
         public Object volumeType  { get; set; }
@@ -22,7 +23,7 @@ namespace Igole.Model
         public Object subCategory {get; set;}
         public Object tag { get; set; }
 
-
+  
     }
 
 }

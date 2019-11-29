@@ -13,6 +13,7 @@ namespace Igole.ViewAdm
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Administrador : ContentPage
     {
+        
         public Administrador()
         {
             InitializeComponent();
@@ -21,6 +22,7 @@ namespace Igole.ViewAdm
             ContasViewModel contasViewModel = new ContasViewModel();
             this.BindingContext = contasViewModel;
 
+            
 
             contasViewModel.IniciaDados();
 
@@ -40,11 +42,14 @@ namespace Igole.ViewAdm
                     contasViewModel.ModCardapio = e.Item as Model.ModCardapio;
                 }
             };
+
+            contasViewModel.IniciaDados();
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new MainPage());
         }
+
     }
 }

@@ -13,6 +13,10 @@
                     </StackLayout>
             <StackLayout>
                 <StackLayout>
+                    <Label Text= "{Binding ModCardapio._id}"/>
+                </StackLayout>
+                
+                <StackLayout>
                     <Entry Placeholder="Nome" Text= "{Binding ModCardapio.nameProduct} "/>
                 </StackLayout>
 

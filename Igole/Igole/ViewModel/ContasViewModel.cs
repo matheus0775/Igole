@@ -1,4 +1,5 @@
 ﻿using Igole.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -59,18 +60,22 @@ namespace Igole.ViewModel
 
         private void ExecuteButton()
         {
-            if (ModCardapio._id >= 1)
+            if (!String.IsNullOrEmpty (ModCardapio._id))
             {
                 _conexao.Update(ModCardapio);
-                App.Current.MainPage.DisplayAlert("Produto", "Alterado com sucesso", "Ok");
-
+                App.Current.MainPage.DisplayAlert("Produto", "Atualizado com sucesso", "Ok");
+                IniciaDados();
             }
             else
             {
-                _conexao.Add(ModCardapio);
-                App.Current.MainPage.DisplayAlert("Produto", "Cadastro com sucesso", "Ok");
+
+                 _conexao.Add(ModCardapio);
+                App.Current.MainPage.DisplayAlert("Produto", "Cadastrado com sucesso", "Ok");
+
+              
             }
             IniciaDados();
+
         }
     }
 }

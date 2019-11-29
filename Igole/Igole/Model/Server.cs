@@ -45,13 +45,18 @@ namespace Igole.Model
             using (var produto = new HttpClient())
             {
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11;
-                cardapio._id = null;
                 var dados = JsonConvert.SerializeObject(cardapio);
                 var request = new HttpRequestMessage(HttpMethod.Put, string.Format("{0}/{1}", endpoint, cardapio._id));
+                Console.WriteLine(dados);
                 request.Content = new StringContent(dados, Encoding.UTF8, "application/json");
                 var result = produto.SendAsync(request).Result;
+                Console.WriteLine("teste");
+
+                
+    
             }
         }
+
 
         public void Delete(ModCardapio cardapio)
         {
