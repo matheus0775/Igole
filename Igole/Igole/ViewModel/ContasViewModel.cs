@@ -60,7 +60,8 @@ namespace Igole.ViewModel
 
         private void ExecuteButton()
         {
-            if (!String.IsNullOrEmpty (ModCardapio._id))
+            //if (!String.IsNullOrEmpty (ModCardapio._id))
+            if (ModCardapio.Id <= 1)
             {
                 _conexao.Update(ModCardapio);
                 App.Current.MainPage.DisplayAlert("Produto", "Atualizado com sucesso", "Ok");

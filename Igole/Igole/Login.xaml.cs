@@ -67,7 +67,7 @@ namespace Igole
 
                 Application.Current.MainPage = new NavigationPage(new MainPage());
             }
-            if (Email.Text == "adm" && Senha.Text == "adm")
+            if  (Email.Text == "adm" && Senha.Text == "adm")
             {
                 Application.Current.MainPage = new NavigationPage(new ViewAdm.Administrador());
             }
@@ -81,7 +81,7 @@ namespace Igole
         }
         async Task DandoUmTempo(int valor)
         {
-            await Task.Delay(valor);
+            await Task.Delay(valor = 5000);
         }
 
     }

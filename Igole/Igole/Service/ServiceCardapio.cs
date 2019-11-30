@@ -12,7 +12,7 @@ namespace Igole.Service
     {
         private List<ModCardapio> Cardapios = new List<ModCardapio>
         {
-            new ModCardapio { nameProduct="Guarana", description="Refrigerante 2 litros", image="Cardapio.png", Real="Valor R$", price= "10.00" }
+            new ModCardapio { nameProduct="Guarana", description="Refrigerante 2 litros", image="Cardapio.png", price= "10.00" }
             //new ModCardapio { nameProduct="CocaCoca", description="Refrigerante 2 litros", image="Cardapio.png",tag="A", amountVolume="2", stock="7", volumeType="A", category="1", subCategory="2", Real="Valor R$", price="10.00M" },
             //new ModCardapio { nameProduct="Pepsi", description="Refrigerante 2 litros", image="Cardapio.png", tag="A", amountVolume="2", stock="7", volumeType="A", category="1", subCategory="2", Real="Valor R$", price="10.00M" }
 

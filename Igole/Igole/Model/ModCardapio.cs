@@ -14,7 +14,6 @@ namespace Igole.Model
         public String nameProduct { get; set; }
         public String description { get; set; }
         public String image { get; set; }
-        public String Real { get; set; } //????
         public String price { get; set; }
         public String stock { get; set; }
         public Object volumeType  { get; set; }
